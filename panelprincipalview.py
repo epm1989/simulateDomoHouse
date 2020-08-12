@@ -50,7 +50,7 @@ async def mostrar():
         ha=custom_fig.renderText(habitacion_text)
 
         ha_lu=custom_fig1.renderText(f"Luces {'ON' if resultado['habitacion']['habitacion_luces'] == 1 else 'OFF'}")
-        ha_pe=custom_fig1.renderText(f"Persianas {'ON' if resultado['habitacion']['habitacion_persiana'] == 1 else 'OFF'}")
+        ha_pe=custom_fig1.renderText(f"Persianas {'UP' if resultado['habitacion']['habitacion_persiana'] == 1 else 'DOWN'}")
         ha_bo=custom_fig1.renderText(f"Boton {'ON' if resultado['habitacion']['habitacion_boton'] == 1 else 'OFF'}")
 
         cocina_text="--COCINA--"
